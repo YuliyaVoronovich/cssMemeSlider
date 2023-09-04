@@ -21,6 +21,7 @@ body {
   max-width: 64rem;
   width: 100%;
   margin: 40px auto;
+  background: #2f363c;
 }
 .switch {
   display: none;
@@ -30,17 +31,17 @@ body {
   flex-direction: column;
   justify-content: space-between; 
   padding: 2rem;
-  background: #2f363c;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
 .slider-inner {
   max-width: 960rem;
   overflow: hidden;  
-  background: #e5e9ec;
+  background: #000000;
 }
 .slider-images {
   display: flex;
   width: 100%;
+  text-align: center;
   transition: all 0.5s;
   list-style: none;
 }
@@ -50,10 +51,11 @@ body {
 }
 .slider-img img {
   vertical-align: top;
-  width: 100%;
+  width: 50%;
 }
 .navigation {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
 }
@@ -150,4 +152,26 @@ label:active span{
 #switch5:checked~.navigation .text .text5{
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+  .navigation {
+      flex-direction: column-reverse;
+  }    
+  .labels {
+    margin: 0 auto;
+  } 
+  .text {
+    margin-top: 2rem;
+  } 
+  .slider-img img {
+    width: 100%;
+    object-fit: contain;
+  }  
+  .text-item {
+    font-size: 20px;
+  }
 }
