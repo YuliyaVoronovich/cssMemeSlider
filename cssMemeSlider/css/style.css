@@ -15,6 +15,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+  color: #e5e9ec;
 }
 .wrapper {
   max-width: 64rem;
@@ -35,7 +36,7 @@ body {
 .slider-inner {
   max-width: 960rem;
   overflow: hidden;  
-  background: #ffffff;
+  background: #e5e9ec;
 }
 .slider-images {
   display: flex;
@@ -76,20 +77,73 @@ label:hover span{
 label:active span{
   background-color: white;
 }
-#btn1:checked ~ .navigation .labels label[for="btn1"] span {
+#switch1:checked ~ .navigation .labels label[for="btn1"] span {
   background-color: white;
 }
 
-#btn2:checked ~ .navigation .labels label[for="btn2"] span {
+#switch2:checked ~ .navigation .labels label[for="btn2"] span {
   background-color: white;
 }
 
-#btn3:checked ~ .navigation .labels label[for="btn3"] span {
+#switch3:checked ~ .navigation .labels label[for="btn3"] span {
   background-color: white;
 }
-#btn4:checked ~ .navigation .labels label[for="btn4"] span {
+#switch4:checked ~ .navigation .labels label[for="btn4"] span {
   background-color: white;
 }
-#btn5:checked ~ .navigation .labels label[for="btn5"] span {
+#switch5:checked ~ .navigation .labels label[for="btn5"] span {
   background-color: white;
+}
+
+#switch1:checked~.slider-inner .slider-images {
+  transform: translate(0);
+}
+#switch2:checked~.slider-inner .slider-images {
+  transform: translateX(-100%);
+}
+#switch3:checked~.slider-inner .slider-images {
+  transform: translateX(-200%);
+}
+#switch4:checked~.slider-inner .slider-images {
+  transform: translateX(-300%);
+}
+#switch5:checked~.slider-inner .slider-images {
+  transform: translateX(-400%);
+}
+
+.text-item {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.8s;
+}
+.text1,
+.text2,
+.text3,
+.text4,
+.text5 {
+  display: block;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#switch1:checked~.navigation .text .text1{
+  opacity: 1;
+  visibility: visible;
+}
+#switch2:checked~.navigation .text .text2{
+  opacity: 1;
+  visibility: visible;
+}
+#switch3:checked~.navigation .text .text3{
+  opacity: 1;
+  visibility: visible;
+}
+#switch4:checked~.navigation .text .text4{
+  opacity: 1;
+  visibility: visible;
+}
+#switch5:checked~.navigation .text .text5{
+  opacity: 1;
+  visibility: visible;
 }
