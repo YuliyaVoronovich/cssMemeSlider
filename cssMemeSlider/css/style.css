@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+}
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.wrapper {
+  max-width: 64rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.switch {
+  display: none;
+}
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 2rem;
+  background: #2f363c;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+.slider-inner {
+  max-width: 960rem;
+  overflow: hidden;  
+  background: #ffffff;
+}
+.slider-images {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s;
+  list-style: none;
+}
+.slider-img {
+  width: 100%;
+  flex-shrink:0;
+}
+.navigation {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.labels label {
+  display: inline-block;
+  padding: 5px;
+  font-size: 0;
+  cursor: pointer;
+}
+.labels span {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+  border-radius: 50%;
+  border: 2px solid #e5e9ec;
+  background-color: #738290;
+  vertical-align: bottom; 
+  transition: 0.7s;   
+}
+label:hover span{
+  background-color: white;
+}
+label:active span{
+  background-color: white;
+}
+#btn1:checked ~ .navigation .labels label[for="btn1"] span {
+  background-color: white;
+}
+
+#btn2:checked ~ .navigation .labels label[for="btn2"] span {
+  background-color: white;
+}
+
+#btn3:checked ~ .navigation .labels label[for="btn3"] span {
+  background-color: white;
+}
+#btn4:checked ~ .navigation .labels label[for="btn4"] span {
+  background-color: white;
+}
+#btn5:checked ~ .navigation .labels label[for="btn5"] span {
+  background-color: white;
+}

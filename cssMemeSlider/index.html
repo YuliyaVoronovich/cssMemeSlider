@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>cssMemeSlider</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <main class="slider">
+                <input type="radio" name="slider-switch" class="switch" id="btn1" checked>
+                <input type="radio" name="slider-switch" class="switch" id="btn2">
+                <input type="radio" name="slider-switch" class="switch" id="btn3">
+                <input type="radio" name="slider-switch" class="switch" id="btn4">
+                <input type="radio" name="slider-switch" class="switch" id="btn5">
+
+            <div class="slider-inner">               
+
+                <ul class="slider-images" >
+                    <li class="slider-img">1</li>
+                    <li class="slider-img">2</li>
+                    <li class="slider-img">3</li>
+                    <li class="slider-img">4</li>
+                    <li class="slider-img">5</li>
+                </ul>
+            </div>
+            
+            <div class="navigation">
+                <span>текст</span>
+                <span class="labels">
+                    <label for="btn1"><span></span></label>
+                    <label for="btn2"><span></span></label>
+                    <label for="btn3"><span></span></label>
+                    <label for="btn4"><span></span></label>
+                    <label for="btn5"><span></span></label>
+                </span>
+            </div>
+        </main> 
+    </div>   
 </body>
 </html>
