@@ -77,21 +77,21 @@ label:hover span{
 label:active span{
   background-color: white;
 }
-#switch1:checked ~ .navigation .labels label[for="btn1"] span {
+#switch1:checked ~ .navigation .labels label[for="switch1"] span {
   background-color: white;
 }
 
-#switch2:checked ~ .navigation .labels label[for="btn2"] span {
+#switch2:checked ~ .navigation .labels label[for="switch2"] span {
   background-color: white;
 }
 
-#switch3:checked ~ .navigation .labels label[for="btn3"] span {
+#switch3:checked ~ .navigation .labels label[for="switch3"] span {
   background-color: white;
 }
-#switch4:checked ~ .navigation .labels label[for="btn4"] span {
+#switch4:checked ~ .navigation .labels label[for="switch4"] span {
   background-color: white;
 }
-#switch5:checked ~ .navigation .labels label[for="btn5"] span {
+#switch5:checked ~ .navigation .labels label[for="switch5"] span {
   background-color: white;
 }
 
