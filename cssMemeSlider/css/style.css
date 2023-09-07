@@ -12,7 +12,7 @@ html {
 body {
   background: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   color: #e5e9ec;
@@ -20,7 +20,7 @@ body {
 .wrapper {
   max-width: 64rem;
   width: 100%;
-  margin: 40px auto;
+  margin: 2rem auto;
   background: #2f363c;
 }
 .switch {
@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   justify-content: space-between; 
   padding: 2rem;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1rem 1.5rem -0.5rem rgba(0, 0, 0, 0.75);
 }
 .slider-inner {
   max-width: 960rem;
@@ -61,7 +61,7 @@ body {
 }
 .labels label {
   display: inline-block;
-  padding: 5px;
+  padding: 0.3rem;
   font-size: 0;
   cursor: pointer;
 }
@@ -70,35 +70,35 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, .8);
   border-radius: 50%;
-  border: 4px solid #e5e9ec;
+  border: 0.2rem solid #e5e9ec;
   background-color: #738290;
   vertical-align: bottom; 
   transition: 0.7s;   
 }
 label:hover span{
-  background-color: white;
+  background-color: #e5e9ec;
 }
 label:active span{
-  background-color: white;
+  background-color: #e5e9ec;
 }
 #switch1:checked ~ .navigation .labels label[for="switch1"] span {
-  background-color: white;
+  background-color: #e5e9ec;
 }
 
 #switch2:checked ~ .navigation .labels label[for="switch2"] span {
-  background-color: white;
+  background-color: #e5e9ec;
 }
 
 #switch3:checked ~ .navigation .labels label[for="switch3"] span {
-  background-color: white;
+  background-color: #e5e9ec;
 }
 #switch4:checked ~ .navigation .labels label[for="switch4"] span {
-  background-color: white;
+  background-color: #e5e9ec;
 }
 #switch5:checked ~ .navigation .labels label[for="switch5"] span {
-  background-color: white;
+  background-color: #e5e9ec;
 }
 
 #switch1:checked~.slider-inner .slider-images {
@@ -172,6 +172,6 @@ label:active span{
     object-fit: contain;
   }  
   .text-item {
-    font-size: 20px;
+    font-size: 1rem;
   }
 }
