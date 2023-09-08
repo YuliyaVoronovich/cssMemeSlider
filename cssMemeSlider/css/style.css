@@ -29,6 +29,7 @@ body {
 .slider {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   justify-content: space-between; 
   padding: 2rem;
   box-shadow: 0 1rem 1.5rem -0.5rem rgba(0, 0, 0, 0.75);
@@ -54,11 +55,19 @@ body {
   width: 50%;
 }
 .navigation {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
   display: flex;
+  row-gap: 2rem;
   justify-content: space-between;
 }
+.text {
+  width: 70%;
+  height: 5rem;
+}
+.labels {
+  width: 30%;
+  text-align: right;
+}
+
 .labels label {
   display: inline-block;
   padding: 0.3rem;
@@ -143,15 +152,19 @@ label:hover span{
     margin: 0 auto;
   }
   .navigation {
-      flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }    
   .labels {
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
   } 
   .text {
-    margin-top: 2rem;
+    height: 5rem;
+    width: 100%;
   } 
   .slider-img img {
+    max-width: 36rem;
     width: 100%;
     object-fit: contain;
   }  
