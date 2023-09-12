@@ -12,16 +12,16 @@ html {
 body {
   background: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
-  color: #e5e9ec;
+  color: #b4b6b8;
 }
 .wrapper {
   max-width: 64rem;
   width: 100%;
   margin: 2rem auto;
-  background: #2f363c;
+  background: #1c2429;
 }
 .switch {
   display: none;
@@ -51,8 +51,10 @@ body {
   flex-shrink:0;
 }
 .slider-img img {
-  vertical-align: top;
-  width: 50%;
+  display: block;
+  margin: 0.5rem auto;
+  box-shadow: 0rem 0rem 8px 1px;
+  height: 95%;
 }
 .navigation {
   display: flex;
@@ -81,29 +83,30 @@ body {
   cursor: pointer;
   box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, .8);
   border-radius: 50%;
-  border: 0.2rem solid #e5e9ec;
-  background-color: #738290;
+  border: 0.2rem solid #65a5cd;
+  background-color: #65a5cd;
   vertical-align: bottom; 
   transition: 0.7s;   
 }
 label:hover span{
   background-color: #e5e9ec;
+  border: 0.2rem solid #e5e9ec;
 }
 #switch1:checked ~ .navigation .labels label[for="switch1"] span,
 #switch2:checked ~ .navigation .labels label[for="switch2"] span,
 #switch3:checked ~ .navigation .labels label[for="switch3"] span,
 #switch4:checked ~ .navigation .labels label[for="switch4"] span,
 #switch5:checked ~ .navigation .labels label[for="switch5"] span {
-  background-color: #738290;
-  border-color: #738290;
+  background-color: #333c44;
+  border-color: #65a5cd;
 }
 #switch1:checked ~ .navigation .labels label[for="switch1"]:hover span,
 #switch2:checked ~ .navigation .labels label[for="switch2"]:hover span,
 #switch3:checked ~ .navigation .labels label[for="switch3"]:hover span,
 #switch4:checked ~ .navigation .labels label[for="switch4"]:hover span,
 #switch5:checked ~ .navigation .labels label[for="switch5"]:hover span {
-  border-color: #738290;
-  background-color: #e5e9ec;
+  border-color: #e5e9ec;
+  background-color: #333c44;
 }
 
 #switch1:checked~.slider-inner .slider-images {
@@ -147,7 +150,7 @@ label:hover span{
   visibility: visible;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .wrapper {
     margin: 0 auto;
   }
@@ -165,7 +168,7 @@ label:hover span{
   } 
   .slider-img img {
     max-width: 36rem;
-    width: 100%;
+    width: 95%;
     object-fit: contain;
   }  
   .text-item {
