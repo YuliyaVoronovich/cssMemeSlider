@@ -53,7 +53,7 @@ body {
 .slider-img img {
   display: block;
   margin: 0.5rem auto;
-  box-shadow: 0rem 0rem 8px 1px;
+  box-shadow: 0rem 0rem 0.5rem 0.0675rem;
   height: 95%;
 }
 .navigation {
@@ -150,7 +150,7 @@ label:hover span{
   visibility: visible;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 54rem) {
   .wrapper {
     margin: 0 auto;
   }
