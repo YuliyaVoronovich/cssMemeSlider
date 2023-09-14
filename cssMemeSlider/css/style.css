@@ -83,8 +83,8 @@ body {
   cursor: pointer;
   box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, .8);
   border-radius: 50%;
-  border: 0.2rem solid #65a5cd;
-  background-color: #65a5cd;
+  border: 0.2rem solid #c4b61a;
+  background-color: #c4b61a;
   vertical-align: bottom; 
   transition: 0.7s;   
 }
@@ -98,7 +98,7 @@ label:hover span{
 #switch4:checked ~ .navigation .labels label[for="switch4"] span,
 #switch5:checked ~ .navigation .labels label[for="switch5"] span {
   background-color: #333c44;
-  border-color: #65a5cd;
+  border-color: #c4b61a;
 }
 #switch1:checked ~ .navigation .labels label[for="switch1"]:hover span,
 #switch2:checked ~ .navigation .labels label[for="switch2"]:hover span,
