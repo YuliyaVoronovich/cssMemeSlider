@@ -88,10 +88,7 @@ body {
   vertical-align: bottom; 
   transition: 0.7s;   
 }
-label:hover span{
-  background-color: #e5e9ec;
-  border: 0.2rem solid #e5e9ec;
-}
+
 #switch1:checked ~ .navigation .labels label[for="switch1"] span,
 #switch2:checked ~ .navigation .labels label[for="switch2"] span,
 #switch3:checked ~ .navigation .labels label[for="switch3"] span,
@@ -100,14 +97,7 @@ label:hover span{
   background-color: #333c44;
   border-color: #c4b61a;
 }
-#switch1:checked ~ .navigation .labels label[for="switch1"]:hover span,
-#switch2:checked ~ .navigation .labels label[for="switch2"]:hover span,
-#switch3:checked ~ .navigation .labels label[for="switch3"]:hover span,
-#switch4:checked ~ .navigation .labels label[for="switch4"]:hover span,
-#switch5:checked ~ .navigation .labels label[for="switch5"]:hover span {
-  border-color: #e5e9ec;
-  background-color: #333c44;
-}
+
 
 #switch1:checked~.slider-inner .slider-images {
   transform: translate(0);
@@ -174,4 +164,22 @@ label:hover span{
   .text-item {
     font-size: 1rem;
   }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  
+  label:hover span{
+    background-color: #e5e9ec;
+    border: 0.2rem solid #e5e9ec;
+  }
+
+  #switch1:checked ~ .navigation .labels label[for="switch1"]:hover span,
+  #switch2:checked ~ .navigation .labels label[for="switch2"]:hover span,
+  #switch3:checked ~ .navigation .labels label[for="switch3"]:hover span,
+  #switch4:checked ~ .navigation .labels label[for="switch4"]:hover span,
+  #switch5:checked ~ .navigation .labels label[for="switch5"]:hover span {
+    border-color: #e5e9ec;
+    background-color: #333c44;
+}
+
 }
