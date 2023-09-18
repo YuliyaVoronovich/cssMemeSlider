@@ -97,6 +97,14 @@ body {
   background-color: #333c44;
   border-color: #c4b61a;
 }
+#switch1:active ~ .navigation .labels label[for="switch1"] span,
+#switch2:active ~ .navigation .labels label[for="switch2"] span,
+#switch3:active ~ .navigation .labels label[for="switch3"] span,
+#switch4:active ~ .navigation .labels label[for="switch4"] span,
+#switch5:active ~ .navigation .labels label[for="switch5"] span {
+  background-color: #969292;
+  border-color: #969292;
+}
 
 
 #switch1:checked~.slider-inner .slider-images {
