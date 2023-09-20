@@ -1,0 +1,193 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+}
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #b4b6b8;
+}
+.wrapper {
+  max-width: 64rem;
+  width: 100%;
+  margin: 2rem auto;
+  background: #1c2429;
+}
+.switch {
+  display: none;
+}
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between; 
+  padding: 2rem;
+  box-shadow: 0 1rem 1.5rem -0.5rem rgba(0, 0, 0, 0.75);
+}
+.slider-inner {
+  max-width: 960rem;
+  overflow: hidden;  
+  background: #000000;
+}
+.slider-images {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+  list-style: none;
+}
+.slider-img {
+  width: 100%;
+  flex-shrink:0;
+}
+.slider-img img {
+  display: block;
+  margin: 0.5rem auto;
+  box-shadow: 0rem 0rem 0.5rem 0.0675rem;
+  height: 95%;
+}
+.navigation {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: space-between;
+}
+.text {
+  width: 70%;
+  height: 5rem;
+}
+.labels {
+  width: 30%;
+  text-align: right;
+}
+
+.labels label {
+  display: inline-block;
+  padding: 0.3rem;
+  font-size: 0;
+  cursor: pointer;
+}
+.labels span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, .8);
+  border-radius: 50%;
+  border: 0.2rem solid #c4b61a;
+  background-color: #c4b61a;
+  vertical-align: bottom; 
+  transition: 0.7s;   
+}
+
+#switch1:checked ~ .navigation .labels label[for="switch1"] span,
+#switch2:checked ~ .navigation .labels label[for="switch2"] span,
+#switch3:checked ~ .navigation .labels label[for="switch3"] span,
+#switch4:checked ~ .navigation .labels label[for="switch4"] span,
+#switch5:checked ~ .navigation .labels label[for="switch5"] span {
+  background-color: #333c44;
+  border-color: #c4b61a;
+}
+#switch1:active ~ .navigation .labels label[for="switch1"] span,
+#switch2:active ~ .navigation .labels label[for="switch2"] span,
+#switch3:active ~ .navigation .labels label[for="switch3"] span,
+#switch4:active ~ .navigation .labels label[for="switch4"] span,
+#switch5:active ~ .navigation .labels label[for="switch5"] span {
+  background-color: #969292;
+  border-color: #969292;
+}
+
+
+#switch1:checked~.slider-inner .slider-images {
+  transform: translate(0);
+}
+#switch2:checked~.slider-inner .slider-images {
+  transform: translateX(-100%);
+}
+#switch3:checked~.slider-inner .slider-images {
+  transform: translateX(-200%);
+}
+#switch4:checked~.slider-inner .slider-images {
+  transform: translateX(-300%);
+}
+#switch5:checked~.slider-inner .slider-images {
+  transform: translateX(-400%);
+}
+
+.text-item {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.8s;
+}
+.text1,
+.text2,
+.text3,
+.text4,
+.text5 {
+  display: block;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#switch1:checked~.navigation .text .text1,
+#switch2:checked~.navigation .text .text2,
+#switch3:checked~.navigation .text .text3,
+#switch4:checked~.navigation .text .text4,
+#switch5:checked~.navigation .text .text5 {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 54rem) {
+  .wrapper {
+    margin: 0 auto;
+  }
+  .navigation {
+    flex-direction: column-reverse;
+  }    
+  .labels {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  } 
+  .text {
+    height: 5rem;
+    width: 100%;
+  } 
+  .slider-img img {
+    max-width: 36rem;
+    width: 95%;
+    object-fit: contain;
+  }  
+  .text-item {
+    font-size: 1rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  
+  label:hover span{
+    background-color: #e5e9ec;
+    border: 0.2rem solid #e5e9ec;
+  }
+
+  #switch1:checked ~ .navigation .labels label[for="switch1"]:hover span,
+  #switch2:checked ~ .navigation .labels label[for="switch2"]:hover span,
+  #switch3:checked ~ .navigation .labels label[for="switch3"]:hover span,
+  #switch4:checked ~ .navigation .labels label[for="switch4"]:hover span,
+  #switch5:checked ~ .navigation .labels label[for="switch5"]:hover span {
+    border-color: #e5e9ec;
+    background-color: #333c44;
+}
+
+}
